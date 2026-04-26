@@ -1,0 +1,15 @@
+word1=input("enter word1:")
+word2=input("enter word2:")
+word1=word1.lower()
+word2=word2.lower()
+set1 = set(word1)
+set2 = set(word2)
+print(set1)
+print(set2)
+common_letters = set1.intersection(set2)
+common_letters1 = set1.union(set2)
+if common_letters:
+    sorted_letters = sorted(common_letters)
+    print("Common letters between the two words:", sorted_letters)
+else:
+    print("There are no common letters between the two words.")
