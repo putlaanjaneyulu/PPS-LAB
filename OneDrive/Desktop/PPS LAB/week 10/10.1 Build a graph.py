@@ -11,7 +11,7 @@ else:
         if u == v:
             valid = False
             break
-        edge = tuple(sorted((u, v)))
+        edge = tuple(sorted((u, v)))  ljfccv
         if edge in edges_set:
             valid = False
             break
